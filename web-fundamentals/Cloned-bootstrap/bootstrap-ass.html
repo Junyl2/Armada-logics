@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --top-bg-clr: rgb(112.520718, 44.062154, 249.437846);
+            --top-font-clr: rgb(226, 221, 221);
+            --title-fnt-clr: rgb(245, 244, 244);
+            --bs-body-bg: #212529;
+        }
+
+        body {
+            font-family: 'Segoe UI';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--bs-body-bg)
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: var(--top-bg-clr);
+            padding: 3px;
+        }
+
+        header img {
+            height: 50px;
+            width: 50px;
+            object-fit: contain;
+            margin-left: 60px;
+            cursor: pointer;
+        }
+
+        header ul {
+            display: inline-block;
+        }
+
+        header ul li {
+            display: inline-block;
+            list-style: none;
+            color: var(--top-font-clr);
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .search-container {
+            position: relative;
+            width: 250px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 6px 10px 6px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: transparent;
+            margin-left: 100px;
+
+        }
+
+        .search-input::placeholder {
+            color: rgb(226, 221, 221);
+        }
+
+        input[type="search"]:focus {
+            border: 1px solid var(--top-font-clr);
+            outline: none !important;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 18.5%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+        }
+
+        main {
+            margin-left: 28%;
+            margin-top: 6%;
+            width: 600px;
+            min-height: 600px;
+        }
+
+        main img {
+            margin-left: 34%;
+            height: 180px;
+            width: 200px;
+        }
+
+        main h1 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 500;
+            color: var(--title-fnt-clr);
+            margin-top: 15px;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        main h3 {
+            font-weight: 450;
+            text-align: center;
+            color: rgb(192, 188, 188);
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        main .docs {
+            margin-left: 30px;
+
+        }
+
+        main .docs #first {
+            display: inline-block;
+            background-color: rgb(189 198 207 / 8%);
+            color: rgb(192, 188, 188);
+            height: 50px;
+            width: 250px;
+            margin-right: 10px;
+            border-radius: 6px;
+            text-align: center;
+            align-content: center;
+            cursor: pointer;
+        }
+
+        #second {
+            display: inline-block;
+            background-color: var(--bg-clr);
+            color: white;
+            height: 50px;
+            width: 200px;
+            border-radius: 6px;
+            text-align: center;
+            align-content: center;
+            cursor: pointer;
+        }
+
+        p {
+            color: var(--title-fnt-clr);
+            text-align: center;
+        }
+
+        span {
+            color: rgb(134, 132, 132);
+        }
+
+        .nxt-btn {
+            max-width: fit-content;
+        }
+
+        .nxt-btn img {
+            height: 75px;
+            width: 80px;
+            margin-left: 270px;
+            cursor: pointer;
+        }
+
+        footer {
+            width: 550px;
+            margin-left: 31%;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        footer h1 {
+            color: var(--title-fnt-clr);
+            font-weight: 500;
+        }
+
+        footer h3 {
+            color: var(--top-font-clr);
+            font-weight: 200;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: rgb(110, 168, 254);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo11.png" alt="">
+        <ul>
+            <li>Docs</li>
+            <li>Examples</li>
+            <li>Icons</li>
+            <li>Themes</li>
+            <li>Blog</li>
+        </ul>
+        <div class="search-container">
+            <input type="search" name="search" class="search-input" placeholder="Search">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" class="search-icon">
+        </div>
+    </header>
+    <main>
+        <div>
+            <img src="logo22.png" alt="">
+        </div>
+        <div class="title">
+            <h1>Build fast, responsive sites with Bootstrap</h1>
+        </div>
+        <div class="sub-title">
+            <h3>Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize
+                prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</h3>
+        </div>
+        <div class="docs">
+            <ul>
+                <li id="first"><a href=""></a>$ npm boostrap@5.3.3</li>
+                <li id="second"><a href=""></a>Read the docs</li>
+            </ul>
+        </div>
+        <p> Currently <strong>v5.3.3 </strong><span>· Download · All releases</span> </p>
+        <div class="nxt-btn">
+            <img src="nxtlogo.png" alt="">
+        </div>
+    </main>
+    <footer>
+        <h1>Get started any way you want</h2>
+            <h3> Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the
+                source
+                code.</h3>
+            <a href=""> Read installation docs -> </a>
+
+    </footer>
+</body>
+
+</html>
